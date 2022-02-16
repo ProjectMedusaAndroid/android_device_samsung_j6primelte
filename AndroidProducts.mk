@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rr_j6primelte.mk
+    $(LOCAL_DIR)/havoc_j6primelte.mk

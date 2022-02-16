@@ -17,11 +17,10 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common RR stuff
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Inherit from j6primelte device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
-$(call inherit-product, $(LOCAL_PATH)/rr_config.mk)
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -29,7 +28,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := j6primelte
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_NAME := rr_j6primelte
+PRODUCT_NAME := havoc_j6primelte
 PRODUCT_MODEL := Galaxy J6+
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
